@@ -14,6 +14,10 @@
       src="https://kit.fontawesome.com/fa62c117c7.js"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://kit.fontawesome.com/657b936871.js"
+      crossorigin="anonymous"
+    ></script>
 
     <link rel="stylesheet" href="styles.css" />
     <title>Chris Lee Personal Website</title>
@@ -33,7 +37,11 @@
             <a class="link link--nav" href="#skills">Skills</a>
           </li>
           <li class="nav__list-item">
-            <a class="link link--nav" href="Christopher Lee Resume Fall 2022.pdf">my resume</a>
+            <a
+              class="link link--nav"
+              href="Christopher Lee Resume Fall 2022.pdf"
+              >my resume</a
+            >
           </li>
           <li class="nav__list-item">
             <a class="link link--nav" href="#mailto:cl114@illinois.edu"
@@ -41,20 +49,41 @@
             >
           </li>
         </ul>
-
-        <button
-          type="button"
-          aria-label="toggle navigation"
-          class="btn btn--icon nav__hamburger"
-        >
-          <i class="fas fa-bars"></i>
-        </button>
       </nav>
     </header>
 
     <div class="about">
       <div class="about center">
-        <h1>Hello, I'm <span class="about__name"> Chris </span></h1>
+        <h1>Hello, I'm <span class="about_name">Chris</span></h1>
+        <style>
+          .about_name {
+            background: linear-gradient(
+              -45deg,
+              #008cff,
+              #2600ff,
+              #8600f3,
+              #c300ff
+            );
+            background-size: 300%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: animated_text 5s ease-in-out infinite;
+            -moz-animation: animated_text 5s ease-in-out infinite;
+            -webkit-animation: animated_text 5s ease-in-out infinite;
+          }
+
+          @keyframes animated_text {
+            0% {
+              background-position: 0px 50%;
+            }
+            50% {
+              background-position: 100% 50%;
+            }
+            100% {
+              background-position: 0px 50%;
+            }
+          }
+        </style>
         <h2 class="about__role">
           Studying Engineering & Computer Science @ UIUC
         </h2>
@@ -104,7 +133,7 @@
           </a>
           <a
             href="mailto:cl114@illinois.edu"
-            aria-label="linkedin"
+            aria-label="email"
             class="link link--icon"
           >
             <i
@@ -126,29 +155,69 @@
         <h2 class="section__title">Places I worked</h2>
         <div class="experience__grid">
           <div class="experience">
-            <h3></h3>
-            <p class="exp__description"></p>
+            <h3>
+              <u style="text-decoration-color: rgb(175, 0, 0)"
+                >The Vanguard Group</u
+              >
+            </h3>
+            <p class="exp__description">
+              Incoming Summer 2023 Software Engineering Intern in the Investment
+              Systems division on the Global Trade Execution Team
+            </p>
+            <ul class="exp__stack" style="padding-top: 4.5rem">
+              <li class="exp__stack-item">
+                Angular <i class="fa-brands fa-angular"></i>
+              </li>
+              <li class="exp__stack-item">
+                Java <i class="fa-brands fa-java"></i>
+              </li>
+              <li class="exp__stack-item">
+                AWS <i class="fa-brands fa-aws"></i>
+              </li>
+            </ul>
+          </div>
+          <div class="experience">
+            <h3>
+              <u style="text-decoration-color: rgb(223, 190, 45)"
+                >Synchrony Financial</u
+              >
+            </h3>
+            <p class="exp__description">
+              Transformed SSL certificate lifecycle management by integrating
+              messy audit data from Tanium to a user-centered dashboard via
+              RESTful API built with React.js, Node.js, & Express.js saving 500+
+              hours of manual data cleaning and analysis <br />
+            </p>
             <ul class="exp__stack">
-              <li class="exp__stack-item"></li>
-              <li class="exp__stack-item"></li>
+              <li class="exp__stack-item">
+                Node.js <i class="fa-brands fa-node"></i>
+              </li>
+              <li class="exp__stack-item">
+                Express.js <i class="fa-brands fa-node-js"></i>
+              </li>
+              <li class="exp__stack-item">
+                React.js <i class="fa-brands fa-react"></i>
+              </li>
             </ul>
           </div>
 
           <div class="experience">
-            <h3></h3>
+            <h3>
+              <u style="text-decoration-color: rgb(29, 191, 255)"
+                >Limitless Medical Logs</u
+              >
+            </h3>
             <p class="exp__description"></p>
             <ul class="exp__stack">
-              <li class="exp__stack-item"></li>
-              <li class="exp__stack-item"></li>
-            </ul>
-          </div>
-
-          <div class="experience">
-            <h3></h3>
-            <p class="exp__description"></p>
-            <ul class="exp__stack">
-              <li class="exp__stack-item"></li>
-              <li class="exp__stack-item"></li>
+              <li class="exp__stack-item">
+                Excel <i class="fa-solid fa-file-excel"></i>
+              </li>
+              <li class="exp__stack-item">
+                Powerpoint <i class="fa-solid fa-file-powerpoint"></i>
+              </li>
+              <li class="exp__stack-item">
+                Data Analysis <i class="fa-solid fa-chart-simple"></i>
+              </li>
             </ul>
           </div>
           <br /><br /><br />
@@ -216,7 +285,7 @@
     <div class="projects-container">
       <footer class="footer">
         <a href="/" class="link footer__link"> Created By Chris Lee | 2022 </a>
-        <br><br>
+        <br /><br />
         <div>
           <a
             href="Christopher Lee Resume Fall 2022.pdf"
