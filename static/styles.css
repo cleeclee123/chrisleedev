@@ -1,7 +1,3 @@
-/*===============
-  global styles
-===============*/
-
 * {
   padding: 0;
   margin: 0;
@@ -31,18 +27,8 @@ body {
   --clr-bg-alt: #fff;
   --clr-fg: #555;
   --clr-fg-alt: #444;
-  --clr-primary: #2978b5;
+  --clr-primary: #0077ff;
   --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-
-.dark {
-  --clr-bg: #23283e;
-  --clr-bg-alt: #2a2f4c;
-  --clr-fg: #bdbddd;
-  --clr-fg-alt: #cdcdff;
-  --clr-primary: #90a0d9;
-  --shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
-    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
 ::-moz-selection {
@@ -98,21 +84,15 @@ button {
   }
 }
 
-/*===================
-  buttons and links
-===================*/
-
 .link {
-  color: var(--clr-primary);
+  color: #fa1111;
   padding: 0 0 0.3em 0;
   position: relative;
 }
 
 .link:hover {
-  color: var(--clr-primary);
+  color: #fa1111;
 }
-
-/* BEGIN PART 4 */
 
 .link::before {
   content: "";
@@ -129,8 +109,6 @@ button {
 .link:focus::before {
   width: 100%;
 }
-
-/* END PART 4 */
 
 .link--nav {
   color: var(--clr-fg);
@@ -162,7 +140,7 @@ button {
 
 .btn--outline:focus,
 .btn--outline:hover {
-  color: var(--clr-bg);
+  color: #fa1111;
 }
 
 .btn--outline:before {
@@ -200,24 +178,16 @@ button {
 
 .btn--icon:hover,
 .btn--icon:focus {
-  color: var(--clr-primary);
+  color: #fa1111;
 }
 
 .btn--icon:active {
   transform: translateY(-5px);
 }
 
-/*========
-  layout
-========*/
-
-/* BEGIN PART 3 */
-
 .center {
   display: flex;
   align-items: center;
-  /* flex-direction: row;
-  justify-content: center; */
 }
 
 .header {
@@ -227,8 +197,6 @@ button {
   margin: 0 auto;
   justify-content: right;
 }
-
-/* END PART 3 */
 
 main {
   max-width: 1100px;
@@ -270,10 +238,7 @@ main {
   margin-left: 75px;
   border-radius: 50%;
   border-collapse: separate;
-  /* overflow: hidden; */
 }
-
-/* BEGIN PART 7 */
 
 .about {
   display: flex;
@@ -281,16 +246,12 @@ main {
   margin-top: 20px;
 }
 
-/* END PART 7 */
-
 .about__name {
   color: var(--clr-primary);
-  /* text-align: right; */
 }
 
 .about__role {
   margin-top: 1.2em;
-  /* text-align: right; */
 }
 
 .about__desc {
@@ -312,8 +273,6 @@ main {
   margin-right: 1em;
 }
 
-/* BEGIN PART 9 */
-
 .projects__grid,
 .experience__grid {
   max-width: 1100px;
@@ -322,8 +281,6 @@ main {
   grid-template-columns: repeat(auto-fit, calc(100% / 3 - 20px * 2 / 3));
   grid-gap: 10px;
 }
-
-/* END PART 9 */
 
 .project,
 .experience {
@@ -371,8 +328,6 @@ main {
   margin-left: 0.5em;
 }
 
-/* BEGIN PART 11 */
-
 .skills__list {
   max-width: 450px;
   width: 95%;
@@ -386,8 +341,6 @@ main {
   margin-left: 10px;
   margin-right: 10px;
 }
-
-/* END PART 11 */
 
 .contact {
   flex-direction: column;
